@@ -13,10 +13,7 @@ CONF_UNIT = "units"
 
 CONF_UNITS = ["imperial", "metric"]
 
+
 REGION = "region"
 
-REGION_OPTIONS = [
-    "UK&Europe",
-    "Australia",
-    "North America & Canada"
-]
+REGION_OPTIONS = ["UK&Europe", "Australia", "North America & Canada"]
