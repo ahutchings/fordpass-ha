@@ -298,6 +298,8 @@ class Vehicle(object):
         status = self.__makeRequest(
             "PUT", f"{baseUrl}/vehicles/v2/{vinnum}/status", None, None
         )
+        _LOGGER.debug(status.text)
+        _LOGGER.debug(status.status_code)
         return status.json()["status"]
 
     def __makeRequest(self, method, url, data, params):
